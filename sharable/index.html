@@ -52,7 +52,7 @@
                 $(this).hide();
                 $('.progress').removeClass('hide')
                 $.ajax({
-                    url: "https://blender.vidyard.com/forms/BRoceUkhk1ZpPhViXo9WMP/submit",
+                    url: "https://blender.vidyard.com/forms/28g5YD1i8nPaNLjUDjRyy5/submit",
                     type: "POST",
                     beforeSend: function(xhr){
                         xhr.setRequestHeader('Content-type', 'application/json');
@@ -60,7 +60,7 @@
                     },
                     data: JSON.stringify({
                         fields: {
-                            'full-name': e.currentTarget[0].value,
+                            'first-name': e.currentTarget[0].value,
                         },
                     }),
                     success: function(response) {
