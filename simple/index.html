@@ -56,30 +56,13 @@
                             'first-name': e.currentTarget[0].value,
                         },
                     }),
-                   // success: function(response) {
-                    //    $('#cover').addClass('video-ready') 
-                     //   const { unit: { uuid } } = response;
-                     //   var vyCustomId = uuid;
-                     //   var playerSrc = '//play.vidyard.com/k5VMx9FSKVRN1xmaHDU3M2.js?disable_analytics=0&amp;height=360&amp;v=3.1.1&amp;vyemail=&amp;width=640&amp;type=inline&custom_id='+ vyCustomId;
-                     //   $('#cover').html('<script type="text/javascript" id="vidyard_embed_code_k5VMx9FSKVRN1xmaHDU3M2" src="' + playerSrc + '"><\/script>');
-                  //  },
-                    
-                    success: function(response) {
-                        $('#cover').addClass('video-ready') 
+                  success: function(response) {
+                       $('#cover').addClass('video-ready') 
                         const { unit: { uuid } } = response;
-                        var vyCustomId = uuid;
-                        var playerSrc = 'https://play.vidyard.com/k5VMx9FSKVRN1xmaHDU3M2.jpg" 
-                         data-custom_id="'+ vyCustomId;
-                        $('#cover').html('<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
-                         <img
-                         style="width: 100%; margin: auto; display: block;"
-                         class="vidyard-player-embed"
-                         src="' + playerSrc + '"
-                          data-uuid="k5VMx9FSKVRN1xmaHDU3M2"
-                          data-v="4"
-                          data-type="inline"
-/>');
-                    },
+                       var vyCustomId = uuid;
+                       var playerSrc = '//play.vidyard.com/k5VMx9FSKVRN1xmaHDU3M2.js?disable_analytics=0&amp;height=360&amp;v=3.1.1&amp;vyemail=&amp;width=640&amp;type=inline&custom_id='+ vyCustomId;
+                       $('#cover').html('<script type="text/javascript" id="vidyard_embed_code_k5VMx9FSKVRN1xmaHDU3M2" src="' + playerSrc + '"><\/script>');
+                   },
                     
                     error: function() {
                         $('#cover').html('<h2>An Error Occurred... Please try again later</h2>');
